@@ -20,16 +20,15 @@
 
 package jdraw.types;
 
-import jmath.tools.ArrayTools;
-
 import java.util.List;
+import java.util.Arrays;
 
 public class DrawableGroup {
 
   public static DrawableGroup create(Drawable... drawableArray) {
     if (drawableArray == null)
       throw new IllegalArgumentException("Drawables array cannot be null");
-    if (ArrayTools.containsNull(drawableArray))
+    if (Arrays.asList(drawableArray).contains(null))
       throw new IllegalArgumentException("Drawables list cannot contain nulls");
 
     return new DrawableGroup(drawableArray);

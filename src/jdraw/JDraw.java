@@ -28,7 +28,7 @@ public class JDraw {
   public static final int
                  RELEASE_VERSION = 0,
                  MAJOR_VERSION = 3,
-                 MINOR_VERSION = 8;
+                 MINOR_VERSION = 9;
 
 
   public static String getVersion() {
